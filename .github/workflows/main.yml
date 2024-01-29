@@ -11,13 +11,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: hello Nagesh
-      run: echo "Hello Nagesh"
+      run: echo "Hello Nagesh 2"
       shell: bash
   byebye:
      runs-on: ubuntu-latest
      steps:
        - name: goodbye Nagesh
-         run: echo "Good bye Nagesh !!!" 
+         run: echo "Good bye Nagesh 2!!!" 
          shell: bash
       
     
