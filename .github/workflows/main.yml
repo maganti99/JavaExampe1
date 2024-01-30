@@ -17,7 +17,7 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: goodbye Nagesh
-         run: echo "Good bye Nagesh 2!!!" 
+         run: echo ${{ needs.hello }}
          shell: bash
       
     
