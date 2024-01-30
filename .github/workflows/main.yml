@@ -18,7 +18,7 @@ jobs:
      needs: [hello]
      steps:
        - name: goodbye Nagesh
-         run: echo ${{ needs.hello }}
+         run: echo ${{ needs.hello.result }}
          shell: bash
       
     
