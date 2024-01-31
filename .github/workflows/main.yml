@@ -16,6 +16,8 @@ jobs:
   byebye:
      runs-on: ubuntu-latest
      needs: [hello]
+     if: | always() && 
+           (needs.hello.result == 'success')
      steps:
        - name: goodbye Nagesh
          run: echo ${{ needs.hello.result }}
