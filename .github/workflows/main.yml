@@ -18,7 +18,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: hello Nagesh
-      run: echo ${{ inputs.deploy-pcf }}
+      run: | 
+           input=${{ inputs.deploy-pcf }}
+           echo $input
       shell: bash
   byebye:
      runs-on: ubuntu-latest
