@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - run: | 
-           echo $Monday
+           echo $DAY_OF_WEEK
            echo 'Hello Nagesh'
          shell: bash
   byebye:
