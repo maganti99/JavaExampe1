@@ -9,8 +9,10 @@ on:
         type: string
 
 jobs:
-  versioning:
-    name: 'Version App'
-    uses: one-thd/thd-sc-ipr-actions/.github/workflows/semantic-versioning.yaml@main
-    with:
-      bump-each-commit: ${{ inputs.bump-each-commit }}
+  byebye:
+     runs-on: ubuntu-latest
+     if: ${{ (1 == 1)  && (2 == 2)  }}
+     steps:
+       - name: goodbye Nagesh
+         run: echo ${{ needs.hello.result }}
+         shell: bash
