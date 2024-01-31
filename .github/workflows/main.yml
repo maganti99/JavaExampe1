@@ -9,8 +9,8 @@ on:
       deploy-pcf:
         description: 'Determines whether we need to deploy to PCF or not. Used to skip PCF deployment for libraries'
         required: false
-        type: boolean
-        default: true
+        type: string
+        default: 'nagesh'
   
 jobs:
   hello:
