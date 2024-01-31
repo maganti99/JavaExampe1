@@ -23,7 +23,7 @@ jobs:
      if: | 
          always() && 
          (needs.hello.result == 'success') &&
-         (TAG_EVENT)
+         ($TAG_EVENT)
      steps:
        - name: goodbye Nagesh
          run: echo ${{ needs.hello.result }}
