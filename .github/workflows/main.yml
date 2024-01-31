@@ -4,20 +4,16 @@ on:
   push:
     branches: main
   workflow_dispatch:
-  workflow_call:
-    inputs:
-      deploy-pcf:
-        description: 'Determines whether we need to deploy to PCF or not. Used to skip PCF deployment for libraries'
-        required: false
-        type: string
-        default: 'nagesh'
+
+env: 
+  DAY_OF_WEEK: Monday
   
 jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
        - run: | 
-           echo ${{ inputs.deploy-pcf }}
+           echo $Monday
            echo 'Hello Nagesh'
          shell: bash
   byebye:
