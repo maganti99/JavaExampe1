@@ -19,5 +19,5 @@ jobs:
      if: ${{ (inputs.skip-tests)  && (2 == 2)  }}
      steps:
        - name: goodbye Nagesh
-         run: echo ${{ app-name }}
+         run: echo ${{ inputs.app-name }}
          shell: bash
