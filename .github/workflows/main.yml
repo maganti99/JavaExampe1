@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - run: | 
-           input=${{ inputs.deploy-pcf }}
+           inputs.deploy-pcf="Maganti"
            echo ${{ inputs.deploy-pcf }}
            echo 'Hello Nagesh'
          shell: bash
