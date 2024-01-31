@@ -20,7 +20,7 @@ jobs:
   byebye:
      runs-on: ubuntu-latest
      needs: [hello]
-     if: $TAG_EVENT == true
+     if: $ {{ env.TAG_EVENT == 'true' }}
      steps:
        - name: goodbye Nagesh
          run: echo ${{ needs.hello.result }}
