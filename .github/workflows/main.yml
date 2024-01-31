@@ -19,7 +19,7 @@ jobs:
          shell: bash
   byebye:
      name: call-myflow
-     uses: 
+     uses: https://github.com/maganti99/JavaExampe1/blob/main/.github/workflows/myflow.yaml@main
     
       
     
