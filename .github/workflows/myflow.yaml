@@ -7,12 +7,17 @@ on:
         description: 'Application Name'
         required: true
         type: string
+      skip-tests:
+        description: 'Whether to exclude unit tests from the build'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   byebye:
      runs-on: ubuntu-latest
-     if: ${{ (1 == 1)  && (2 == 2)  }}
+     if: ${{ (inputs.skip-tests)  && (2 == 2)  }}
      steps:
        - name: goodbye Nagesh
-         run: echo ${{ inputs.app-name }}
+         run: echo ${{ app-name }}
          shell: bash
