@@ -23,5 +23,5 @@ jobs:
        - name: goodbye Nagesh
          run: | 
             echo ${{ inputs.app-name }}
-            echo $inputs.skip-tests
+            echo "Value: ${{ inputs.skip-tests }}"
          shell: bash
