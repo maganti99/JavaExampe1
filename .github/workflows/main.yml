@@ -22,7 +22,7 @@ jobs:
      uses: ./.github/workflows/myflow.yaml
      with:
           app-name: 'test'
-          skip-tests: true
+          skip-tests: false
     
       
     
