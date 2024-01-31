@@ -4,6 +4,13 @@ on:
   push:
     branches: main
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      deploy-pcf:
+        description: 'Determines whether we need to deploy to PCF or not. Used to skip PCF deployment for libraries'
+        required: false
+        type: boolean
+        default: true
   
 jobs:
   hello:
@@ -18,7 +25,8 @@ jobs:
      needs: [hello]
      if: | 
          always() && 
-         (needs.hello.result == 'success')
+         (needs.hello.result == 'success') &&
+         (inputs.deploy-pcf)
      steps:
        - name: goodbye Nagesh
          run: echo ${{ needs.hello.result }}
