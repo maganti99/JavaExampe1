@@ -20,6 +20,8 @@ jobs:
   byebye:
      name: call-myflow
      uses: ./.github/workflows/myflow.yaml
+     with:
+          app-name: 'test'
     
       
     
