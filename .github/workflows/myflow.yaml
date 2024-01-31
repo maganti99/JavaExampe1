@@ -21,5 +21,7 @@ jobs:
        (inputs.app-name == 'test') 
      steps:
        - name: goodbye Nagesh
-         run: echo ${{ inputs.app-name }}
+         run: | 
+            echo ${{ inputs.app-name }}
+            echo $inputs.skip-tests
          shell: bash
