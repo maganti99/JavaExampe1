@@ -18,12 +18,8 @@ jobs:
            echo 'Hello Nagesh'
          shell: bash
   byebye:
-     runs-on: ubuntu-latest
-     needs: [hello]
-     if: ${{ (1 == 1)  && (2 == 2)  }}
-     steps:
-       - name: goodbye Nagesh
-         run: echo ${{ needs.hello.result }}
-         shell: bash
+     name: call-myflow
+     uses: 
+    
       
     
