@@ -20,7 +20,7 @@ jobs:
     - name: hello Nagesh
       run: | 
            input=${{ inputs.deploy-pcf }}
-           echo $input
+           echo ${{ inputs.deploy-pcf }}
       shell: bash
   byebye:
      runs-on: ubuntu-latest
