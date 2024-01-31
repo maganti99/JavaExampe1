@@ -7,13 +7,14 @@ on:
 
 env: 
   DAY_OF_WEEK: Monday
+  TAG_EVENT: ${{ true }}
   
 jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
        - run: | 
-           echo $DAY_OF_WEEK
+           echo $TAG_EVENT
            echo 'Hello Nagesh'
          shell: bash
   byebye:
