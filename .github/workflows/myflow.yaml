@@ -18,7 +18,7 @@ jobs:
      runs-on: ubuntu-latest
      if: | 
        (!inputs.skip-tests)  && 
-       (2 == 2)  }}
+       (2 == 2) 
      steps:
        - name: goodbye Nagesh
          run: echo ${{ inputs.app-name }}
