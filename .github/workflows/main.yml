@@ -21,6 +21,7 @@ jobs:
       run: | 
            input=${{ inputs.deploy-pcf }}
            echo ${{ inputs.deploy-pcf }}
+           echo 'Hello Nagesh'
       shell: bash
   byebye:
      runs-on: ubuntu-latest
