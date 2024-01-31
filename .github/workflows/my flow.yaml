@@ -1,0 +1,16 @@
+name: CF Deploy to DEV
+
+on:
+  workflow_call:
+    inputs:
+      app-name:
+        description: 'Application Name'
+        required: true
+        type: string
+
+jobs:
+  versioning:
+    name: 'Version App'
+    uses: one-thd/thd-sc-ipr-actions/.github/workflows/semantic-versioning.yaml@main
+    with:
+      bump-each-commit: ${{ inputs.bump-each-commit }}
